@@ -1,15 +1,19 @@
 :root {
   --header-color: #212121;
   --logo-color: #2196f3;
-  --primary-title-color: #212121;
-  --second-title-color: #ffffff;
+  --logo1-color: #000000;
+  --hero-color: #2f303a;
+  --primary-title-color: #ffffff;
   --primary-text-color: #757575;
-  --second-text-color: #ffffff;
-  --accent-text-color: #2196f3;
+  --btn-item-color: #f5f4fa;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+  --team-color: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--header-color);
+  background-color: var(--primary-title-color);
 }
 
 .list {
@@ -22,7 +26,7 @@ body {
 
 /*Studio-header*/
 
-.logo0 {
+.logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -33,13 +37,13 @@ body {
 }
 
 .logo1 {
-  font-family: "Raleway";
+  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--logo1-color);
 }
 
 .menu-link {
@@ -50,19 +54,23 @@ body {
   color: var(--header-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-text-color);
+.current:hover {
+  color: var(--logo-color);
 }
 
+.menu-link:hover,
+.menu-link:focus,
 .header-contact:hover,
-.header-contact:focus {
-  color: var(--accent-text-color);
+.header-contact:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--logo-color);
 }
 
 .header-contact {
   font-weight: 500;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -70,19 +78,31 @@ body {
 
 /*Studio-main*/
 
+.hero {
+  background-color: var(--hero-color);
+}
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--second-title-color);
+  text-transform: uppercase;
+  color: var(--primary-title-color);
 }
 
 .btn-title {
-  background: #2196f3;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
-  color: var(--second-title-color);
+  color: var(--primary-title-color);
   cursor: pointer;
 }
 
@@ -91,7 +111,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  text-transform: uppercase;
+  color: var(--header-color);
 }
 
 .attribute-body {
@@ -106,15 +127,19 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--header-color);
 }
 
-.team-title {
+.team {
+  background-color: #f5f4fa;
+}
+
+.team .team-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--header-color);
 }
 
 .team-name {
@@ -122,7 +147,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--header-color);
 }
 
 .team-pos {
@@ -141,49 +166,50 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--second-title-color);
+  color: var(--primary-title-color);
 }
 
 .address-city {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: var(--primary-title-color);
 }
 
 .footer-contact {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-text-color);
+  color: var(--footer-contact);
 }
 
 /*Portfolio-main*/
 
-.btn-menu {
+.btn-item {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
-}
-
-.btn-item {
-  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--btn-item-color);
   cursor: pointer;
 }
 
 .btn-item:hover,
 .btn-item:focus {
-  color: var(--second-title-color);
-  background-color: var(--accent-text-color);
+  color: var(--primary-title-color);
+  background-color: var(--logo-color);
+}
+
+.btn-item:active {
+  background-color: var(--logo-color);
 }
 
 .project-title {
@@ -191,7 +217,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-title-color);
+  color: var(--header-color);
 }
 
 .project-body {
@@ -199,4 +225,15 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.active,
+.btn-item:hover {
+  color: var(--primary-title-color);
+  background-color: var(--logo-color);
+}
+
+.current,
+.menu-link:hover {
+  color: var(--logo-color);
 }
