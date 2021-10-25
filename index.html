@@ -8,39 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="container header-container">
         <nav class="header-nav">
         <a class="link logo" href="">Web<span class="logo1" lang="en">Studio</span></a>
         <ul class="list menu-list">
-            <li>
+            <li class="menu-item">
                 <a class="menu-link link current" href="index.html">Студия</a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a class="menu-link link" href="portfolio.html">Портфолио</a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a class="menu-link link" href="">Контакты</a>
             </li>
         </ul>
         </nav>
-        <ul class="list menu-list">
+        <ul class="list menu-list header-connect">
             <li>
                 <a class="header-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li>
-                <a class="header-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-contact link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
         </ul>
+        </div>
     </header>
     <main>
         <section class ="hero">
+            <div class="container hero-container">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
             <button class="btn-title" type="button">Заказать услугу</button>
+            </div>
         </section>
-        <section>
+        <section class ="section">
+            <div class="container">
             <h1 hidden>Описание</h2>
             <ul class="list attribute-list">
                 <li>
@@ -60,8 +68,10 @@
                     <p class="attribute-body">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
-        <section>
+        <section class ="section">
+            <div class="container">
             <h2 class="second-title">Чем мы занимаемся</h2>
             <ul class="list working-list">
                 <li class="working-item"><img 
@@ -84,8 +94,10 @@
                     >
                     </li>
             </ul>
+            </div>
         </section>
-        <section class="team">
+        <section class="team section">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="list team-list">
                 <li class="team-item"><img src="./images/team_1.jpg" alt="product_designer" width="270" height="260">
@@ -106,9 +118,11 @@
                     <p class="team-pos" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class ="hero">
+        <div class="container">
         <a class="link logo" href="">Web<span class="logo2" lang="en">Studio</span></a>
         <address>
                 <a class="address-city link" href="https://goo.gl/maps/vY3BDn3XB5CnUUM28">г. Киев, пр-т Леси Украинки,26</a>
@@ -121,6 +135,7 @@
             </li>
         </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html> 
