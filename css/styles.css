@@ -146,6 +146,7 @@ body {
   padding-left: 252px;
   padding-right: 252px;
   padding-bottom: 200px;
+  background-color: var(--hero-color);
 }
 
 .main-title {
@@ -196,6 +197,7 @@ body {
 }
 
 .attribute-item {
+  display: inline-block;
   width: 270px;
 }
 
@@ -206,6 +208,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
 
 .attribute-body {
@@ -278,8 +281,11 @@ body {
 
 /*Studio-footer*/
 
-.footer-container {
+.footer {
   background-color: var(--hero-color);
+}
+
+.footer-container {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -303,11 +309,21 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-connect {
   display: flex;
   flex-direction: column;
+}
+
+.address-connect-item {
+  display: inline-block;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -317,6 +333,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact);
+  display: inline-block;
 }
 
 /*Portfolio-main*/
