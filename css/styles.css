@@ -9,6 +9,7 @@
   --footer-contact: rgba(255, 255, 255, 0.6);
   --team-color: #f5f4fa;
   --header-border-color: #ececec;
+  --item-border-color: #eeeeee;
 }
 
 p,
@@ -338,6 +339,13 @@ body {
 
 /*Portfolio-main*/
 
+.btn-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  margin-bottom: 50px;
+}
+
 .btn-item {
   font-family: Roboto;
   font-style: normal;
@@ -349,6 +357,11 @@ body {
   border: 0;
   background-color: var(--btn-item-color);
   cursor: pointer;
+  padding: 6px 22px;
+}
+
+.btn-list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .btn-item:hover,
@@ -359,6 +372,20 @@ body {
 
 .btn-item:active {
   background-color: var(--logo-color);
+}
+
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.cart-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  border-bottom: 1px solid var(--item-border-color);
 }
 
 .project-title {
