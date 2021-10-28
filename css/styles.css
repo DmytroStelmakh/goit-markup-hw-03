@@ -385,7 +385,22 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
+  /* border-bottom: 1px solid var(--item-border-color);*/
+}
+
+img {
+  display: block;
+}
+
+.cart-item-text {
+  border-right: 1px solid var(--item-border-color);
+  border-left: 1px solid var(--item-border-color);
   border-bottom: 1px solid var(--item-border-color);
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  width: 370px;
 }
 
 .project-title {
