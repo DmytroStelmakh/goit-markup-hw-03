@@ -7,39 +7,40 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <nav class="header-nav">
-                <a class="link logo" href="">Web<span class="logo1" lang="en">Studio</span></a>
-                <ul class="list menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link link " href="index.html">Студия</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link link current" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list menu-list header-connect">
-                <li>
-                    <a class="header-contact link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+<header class="header">
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a class="link logo logo-header" href="">Web<span class="logo1" lang="en">Studio</span></a>
+            <ul class="list menu-list menu-list-header">
+                <li class="menu-item">
+                    <a class="menu-link link current" href="index.html">Студия</a>
                 </li>
-                <li>
-                    <a class="header-contact link header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="menu-item">
+                    <a class="menu-link link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="">Контакты</a>
                 </li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="list menu-list header-connect">
+            <li>
+                <a class="header-contact link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+                <a class="header-contact link header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+</header>
     <main>
         <section class="section">
             <div class="container portfolio-container">
@@ -80,7 +81,7 @@
                     <p class="project-body">Приложение</p>
                     </div>
                 </li>
-                <li class="cart-item"><img src="./images/Prime.jpg" alt="marketing" width="370" height="294"">
+                <li class="cart-item"><img src="./images/Prime.jpg" alt="marketing" width="370" height="294">
                     <div class="cart-item-text">
                     <h3 class="project-title">Проект <span lang="en">Prime</span></h3>
                     <p class="project-body">Маркетинг</p>
@@ -119,8 +120,6 @@
             </ul>
             </div>
         </section>
-        
-
     </main>
     <footer class="footer">
         <div class="container footer-container">

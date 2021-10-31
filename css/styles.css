@@ -7,7 +7,6 @@
   --primary-text-color: #757575;
   --btn-item-color: #f5f4fa;
   --footer-contact: rgba(255, 255, 255, 0.6);
-  --team-color: #f5f4fa;
   --header-border-color: #ececec;
   --item-border-color: #eeeeee;
 }
@@ -75,13 +74,16 @@ body {
   align-items: center;
 }
 
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo {
   margin-right: 93px;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -92,6 +94,11 @@ body {
 
 .menu-list {
   display: flex;
+}
+
+.menu-list-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-item:not(:last-child) {
@@ -140,14 +147,13 @@ body {
 
 .hero {
   background-color: var(--hero-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
-  padding-top: 200px;
-  padding-left: 252px;
-  padding-right: 252px;
-  padding-bottom: 200px;
   background-color: var(--hero-color);
+  width: 696px;
 }
 
 .main-title {
@@ -180,7 +186,7 @@ body {
   color: var(--primary-title-color);
   cursor: pointer;
   padding: 10px 32px;
-  margin-left: 248px;
+  margin-left: 233px;
 }
 
 .section {
@@ -241,8 +247,8 @@ body {
   text-align: center;
 }
 
-.team {
-  background-color: #f5f4fa;
+.team-section {
+  background-color: var(--btn-item-color);
 }
 
 .team-title {
@@ -263,13 +269,18 @@ body {
   margin-right: 30px;
 }
 
+.team-item-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -284,12 +295,12 @@ body {
 
 .footer {
   background-color: var(--hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
   flex-direction: column;
 }
 
@@ -341,8 +352,7 @@ body {
 
 .btn-menu {
   display: flex;
-  align-items: center;
-  margin-left: 280px;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -390,6 +400,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .cart-item-text {
@@ -400,7 +412,6 @@ img {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
-  width: 370px;
 }
 
 .project-title {
@@ -409,6 +420,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
+  margin-bottom: 4px;
 }
 
 .project-body {
