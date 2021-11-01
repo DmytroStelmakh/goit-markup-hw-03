@@ -96,7 +96,7 @@ body {
   display: flex;
 }
 
-.menu-list-header {
+.menu-link-header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -109,8 +109,8 @@ body {
   margin-left: auto;
 }
 
-.header-phone {
-  margin-left: 50px;
+.list-header-mail {
+  margin-right: 50px;
 }
 
 .menu-link {
@@ -273,6 +273,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: var(--primary-title-color);
 }
 
 .team-name {
@@ -314,6 +315,10 @@ body {
   color: var(--primary-title-color);
 }
 
+.footer-address {
+  margin-top: 20px;
+}
+
 .address-city {
   font-style: normal;
   font-weight: normal;
@@ -321,8 +326,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
-  margin-top: 20px;
-  margin-bottom: 9px;
+}
+
+.footer-connect-item {
+  margin-top: 9px;
 }
 
 .footer-connect {
@@ -332,10 +339,6 @@ body {
 
 .address-connect-item {
   display: inline-block;
-}
-
-.footer-mail {
-  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -405,6 +408,7 @@ img {
 }
 
 .cart-item-text {
+  border-top: 0;
   border-right: 1px solid var(--item-border-color);
   border-left: 1px solid var(--item-border-color);
   border-bottom: 1px solid var(--item-border-color);
@@ -412,6 +416,7 @@ img {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+  padding-right: 24px;
 }
 
 .project-title {
